@@ -1,0 +1,90 @@
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+*{
+  font-family: Tahoma, Helvetica, Arial, "Microsoft Yahei","微软雅黑", STXihei, "华文细黑", sans-serif;
+}
+body {
+    background: #000000;
+    color: #acacac;
+}
+
+/*
+  Relevant styles below
+*/
+header .topper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-top: 10px;
+}
+header .navbar{
+  min-height: 40px!important;
+  background: url('../img/nav-bg.png');
+  margin-bottom: 0!important;
+}
+
+header .navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+header .navbar-inverse .navbar-nav > li > a {
+    color: #fff;
+    font-size: 17px;
+}
+header .navbar .navbar-collapse {
+    text-align: center;
+}
+header .navbar-nav > li > a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+header .nav > li {
+    border-right: 1px solid #000;
+}
+header .nav > li:last-child {
+    border:0;
+}
+header .nav > li > a {
+    position: relative;
+    display: block;
+    padding: 9px 70px;
+    color: #e3e3e3;
+}
+header .nav > li > a > span > img{
+margin-right: 10px;
+}
+header .head-top li{
+  display:inline-block;
+}
+main .add-banner{
+  border-top: 1px solid #5d5d5d;
+padding: 14px 0;
+border-bottom: 1px solid #5d5d5d;
+}
+footer .border-top-bottom{
+  border-top: 1px solid #5d5d5d;
+padding: 14px 0;
+border-bottom: 1px solid #5d5d5d;
+}
+footer h3{
+  color: #fff;
+  font-weight: 700;
+  margin: 20px 0;
+}
+footer .footer-list li{
+list-style-type: none;
+line-height: 30px;
+}
+
+footer .footer-list li a{
+text-decoration: none;
+color: #ffffff;
+}
+footer .footer-list{
+padding: 0;
+}
+footer .footer-icons .col-md-4 img{
+  margin: 0 auto;
+}
