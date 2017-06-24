@@ -42,7 +42,7 @@
         <div class="container">
             <!-- Topper w/ logo -->
             <div class="row topper">
-                <div class="col-xs-7 col-sm-7">
+                <div class="col-md-7 col-xs-12 col-sm-12">
                     <ul class=" head-top">
                         <li>
                             <a href="" class="logo"><img alt="" src="assets/img/logo.png" class="img-responsive"></a>
@@ -51,10 +51,16 @@
                             <a href=""><img alt="" src="assets/img/win-logo.png" class="img-responsive"></a>
                         </li>
                     </ul>
-
                 </div>
-                <div class="col-xs-5 col-xs-offset-1 col-sm-5 col-sm-offset-0 text-right ">
-                    <a href="#"><img src="assets/img/cs-text.png" alt=""></a>
+                <div class="col-md-5 col-xs-5 hidden-sm hidden-xs text-right language-cs">
+                  <div class="language">
+                    <select>
+                      <option value="简体中文">简体中文</option>
+                    </select>
+                  </div>
+                  <div class="cs">
+                    <img src="assets/img/cs-text.png" alt="">
+                  </div>
                 </div>
             </div>
             <!-- End Topper -->
@@ -62,9 +68,9 @@
         <!-- Navigation -->
 
         <nav class="navbar navbar-inverse">
-            <div class="container text-center">
+            <div class="text-center">
 
-                <div id="navbar" class="navbar-collapse">
+                <div id="navbar" class="navbar-collapse hidden-sm hidden-xs">
                     <ul class="nav navbar-nav">
                         <li><a href="#"><span><img src="assets/img/nav/live.png" alt=""></span>现场游戏</a></li>
                         <li><a href="#"><span><img src="assets/img/nav/slot.png" alt=""></span>电子游戏</a></li>
@@ -73,114 +79,114 @@
                     </ul>
                 </div>
 
+                <div class="swiper-container nav-swiper hidden-lg hidden-md">
+                  <div class="swiper-wrapper">
+                      <div class="swiper-slide"><a href="#"><span><img src="assets/img/nav/live.png" alt=""></span>现场游戏</a></div>
+                      <div class="swiper-slide"><a href="#"><span><img src="assets/img/nav/slot.png" alt=""></span>电子游戏</a></div>
+                      <div class="swiper-slide"><a href="#"><span><img src="assets/img/nav/multi.png" alt=""></span>多人游戏</a></div>
+                      <div class="swiper-slide"><a href="#"><span><img src="assets/img/nav/mobile.png" alt=""></span>移动平台</a></div>
+                  </div>
+              </div>
+
             </div>
         </nav>
     </header>
     <main>
-        <div class="swiper-container">
+        <div class="swiper-container banner-swiper">
             <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="assets/img/banner1.jpg" class="img-responsive" alt=""></div>
-                <div class="swiper-slide"><img src="assets/img/banner2.jpg" class="img-responsive" alt=""></div>
-                <div class="swiper-slide"><img src="assets/img/banner3.jpg" class="img-responsive" alt=""></div>
-                <div class="swiper-slide"><img src="assets/img/banner4.jpg" class="img-responsive" alt=""></div>
-                <div class="swiper-slide"><img src="assets/img/banner5.jpg" class="img-responsive" alt=""></div>
+              <div class="swiper-slide"><img src="assets/img/banner1.jpg" class="img-responsive" alt=""></div>
+              <div class="swiper-slide"><img src="assets/img/banner2.jpg" class="img-responsive" alt=""></div>
+              <div class="swiper-slide"><img src="assets/img/banner3.jpg" class="img-responsive" alt=""></div>
+              <div class="swiper-slide"><img src="assets/img/banner4.jpg" class="img-responsive" alt=""></div>
+              <div class="swiper-slide"><img src="assets/img/banner5.jpg" class="img-responsive" alt=""></div>
             </div>
             <!-- Add Pagination -->
             <div class="swiper-pagination"></div>
             <!-- Add Arrows -->
 
         </div>
-        <div class="login-form">
-          <div class="container">
+        <div class="login-form hidden-sm hidden-xs">
           <form class="form-inline">
             <div class="form-group">
-              <div class="input-group margin-bottom-sm">
-                <span class="input-group-addon"><i class="fa fa-user fa-fw"></i></span>
-                <input class="form-control" type="text" placeholder="Email address">
-              </div>
+              <input class="login-form-input email" type="text" placeholder="邮件">
             </div>
             <div class="form-group">
-              <div class="input-group">
-                <span class="input-group-addon"><i class="fa fa-lock fa-fw"></i></span>
-                <input class="form-control" type="password" placeholder="Password">
-              </div>
+              <input class="login-form-input password" type="password" placeholder="密码">
             </div>
-            <button type="submit" class="btn btn-default">Send invitation</button>
+            <div class="form-group">
+              <input class="login-form-input captcha" type="text" placeholder="验证码">
+            </div>
+            <div class="login-form-captcha">
+              <img src="assets/img/captcha.bmp" alt="">
+              <span class="captcha-refresh"><img src="assets/img/captcha-refresh.png" alt=""></span>
+            </div>
+            <button type="submit" class="btn login-form-button">登录</button>
           </form>
-          </div>
         </div>
         <div class="add-banner">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4"><img src="assets/img/ad-banner-1.png" class="img-responsive" alt=""></div>
-                    <div class="col-md-4"><img src="assets/img/ad-banner-2.png" class="img-responsive" alt=""></div>
-                    <div class="col-md-4"><img src="assets/img/ad-banner-3.png" class="img-responsive" alt=""></div>
-                </div>
-            </div>
+          <div class="row">
+              <div class="col-md-4"><img src="assets/img/pad-banner-1.png" class="img-responsive" alt="h"></div>
+              <div class="col-md-4"><img src="assets/img/pad-banner-2.png" class="img-responsive" alt="a"></div>
+              <div class="col-md-4"><img src="assets/img/pad-banner-3.png" class="img-responsive" alt="s"></div>
+          </div>
         </div>
     </main>
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <footer>
-        <div class="footer" id="footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-offset-1 col-md-2 col-sm-4 col-xs-6">
-                        <h3> 信息 </h3>
-                        <ul class="footer-list">
-                            <li> <a href="#"> 关于我们 </a> </li>
-                            <li> <a href="#"> 规则条款 </a> </li>
-                            <li> <a href="#"> 隐私政策 </a> </li>
-                        </ul>
-                    </div>
-                    <div class=" col-md-2 col-sm-4 col-xs-6">
-                        <h3> 帮助 </h3>
-                        <ul class="footer-list">
-                            <li> <a href="#"> 远程协助 </a> </li>
-                            <li> <a href="#"> 游戏规则 </a> </li>
-                            <li> <a href="#"> 常见问题 </a> </li>
-                        </ul>
-                    </div>
-                    <div class=" col-md-2 col-sm-4 col-xs-6">
-                        <h3> 平台 </h3>
-                        <ul class="footer-list">
-                            <li> <a href="#"> 电脑网页版 </a> </li>
-                            <li> <a href="#"> 桌面客户端 </a> </li>
-                            <li> <a href="#"> 手机网页版 </a> </li>
-                            <li> <a href="#"> 安卓版APP </a> </li>
-                            <li> <a href="#"> 苹果版APP </a> </li>
-                        </ul>
-                    </div>
-                    <div class=" col-md-2 col-sm-4 col-xs-6">
-                        <h3> 连结 </h3>
-                        <ul class="footer-list">
-                            <li> <a href="#"> 会员备用网址 : </a> </li>
-                            <li> <a href="#"> www.salon36.com </a> </li>
-                            <li> <a href="#"> 代理管理系统 :  </a> </li>
-                            <li> <a href="#"> www.sa36.cc</a> </li>
-                        </ul>
-                    </div>
-                    <div class=" col-md-2 col-sm-4 col-xs-6">
-                        <h3> 联糸 </h3>
-                        <ul class="footer-list">
-                            <li> <a href="#"> 开户专线 : </a> </li>
-                            <li> <a href="#"> (+63) 91 7777 1111  </a> </li>
-                            <li> <a href="#"> 客服热线 : </a> </li>
-                            <li> <a href="#"> (+63) 909 8888 888  </a> </li>
-                            <li> <a href="#"> (+853) 6285 6285   </a> </li>
-                            <li> <a href="#"> 电子邮箱 : </a> </li>
-                            <li> <a href="#"> cs@sa36.net </a> </li>
-                        </ul>
-                    </div>
+      <div class="footer" id="footer">
+        <div class="container footer-sitemap">
+              <div class="col-md-offset-1 col-md-2 col-sm-4 col-xs-6">
+                  <h3> 信息 </h3>
+                  <ul class="footer-list">
+                      <li> <a href="#"> 关于我们 </a> </li>
+                      <li> <a href="#"> 规则条款 </a> </li>
+                      <li> <a href="#"> 隐私政策 </a> </li>
+                  </ul>
+              </div>
+              <div class="col-md-2 col-sm-4 col-xs-6">
+                  <h3> 帮助 </h3>
+                  <ul class="footer-list">
+                      <li> <a href="#"> 远程协助 </a> </li>
+                      <li> <a href="#"> 游戏规则 </a> </li>
+                      <li> <a href="#"> 常见问题 </a> </li>
+                  </ul>
+              </div>
+              <div class=" col-md-2 col-sm-4 col-xs-6">
+                  <h3> 平台 </h3>
+                  <ul class="footer-list">
+                      <li> <a href="#"> 电脑网页版 </a> </li>
+                      <li> <a href="#"> 桌面客户端 </a> </li>
+                      <li> <a href="#"> 手机网页版 </a> </li>
+                      <li> <a href="#"> 安卓版APP </a> </li>
+                      <li> <a href="#"> 苹果版APP </a> </li>
+                  </ul>
+              </div>
+              <div class=" col-md-2 col-sm-4 col-xs-6">
+                  <h3> 连结 </h3>
+                  <ul class="footer-list">
+                      <li> <a href="#"> 会员备用网址 : </a> </li>
+                      <li> <a href="#"> www.salon36.com </a> </li>
+                      <li> <a href="#"> 代理管理系统 :  </a> </li>
+                      <li> <a href="#"> www.sa36.cc</a> </li>
+                  </ul>
+              </div>
+              <div class=" col-md-2 col-sm-4 col-xs-6">
+                  <h3> 联糸 </h3>
+                  <ul class="footer-list">
+                      <li> <a href="#"> 开户专线 : </a> </li>
+                      <li> <a href="#"> (+63) 91 7777 1111  </a> </li>
+                      <li> <a href="#"> 客服热线 : </a> </li>
+                      <li> <a href="#"> (+63) 909 8888 888  </a> </li>
+                      <li> <a href="#"> (+853) 6285 6285   </a> </li>
+                      <li> <a href="#"> 电子邮箱 : </a> </li>
+                      <li> <a href="#"> cs@sa36.net </a> </li>
+                  </ul>
+              </div>
+        </div>
 
-                </div>
-                <!--/.row-->
-
-            </div>
-            <!--/.container-->
-            <div class="border-top-bottom">
-              <div class="container">
-
-            <div class="footer-icons text-center">
+        <div class="border-top-bottom">
+          <div class="container footer-icons ">
+            <div class="text-center">
               <div class="col-md-4">
                 <h3>支持瀏览器</h3>
                 <img src="assets/img/2a.png" class="img-responsive" alt=""></div>
@@ -191,34 +197,28 @@
                 <h3>监管及认证</h3>
                 <img src="assets/img/2c.png" class="img-responsive" alt=""></div>
             </div>
-              </div>
-            </div>
-
-
-
-
-            <div class="footer-copyright text-center">
-            <div class="container">
-              <div class="col-md-3">
-                <img src="assets/img/sagaming.png" class="img-responsive" alt="">
-              </div>
-              <div class="col-md-3">
-                <img src="assets/img/salon.png" class="img-responsive" alt="">
-              </div>
-              <div class="col-md-4">
-                在线諮询 | 菲律宾+63 2304-1688 | info@sa36.net  <br>
-                会员备用网址 | 代理登入：https://www.sa36.cc
-              </div>
-              <div class="col-md-2">
-                <img src="assets/img/21.png" alt="">未满21岁人士禁止进入<br>
-                SA36.NET 版权所有 &COPY;2017
-             </div>
-
-
+          </div>
         </div>
-        <!--/.footer-->
 
-        <!--/.footer-bottom-->
+        <div class="text-center">
+          <div class="container footer-copyright ">
+            <div class="col-md-3">
+              <img src="assets/img/sagaming.png" class="img-responsive" alt="">
+            </div>
+            <div class="col-md-3">
+            <img src="assets/img/salon.png" class="img-responsive" alt="">
+            </div>
+            <div class="col-md-4">
+            在线諮询 | 菲律宾+63 2304-1688 | info@sa36.net  <br>
+            会员备用网址 | 代理登入：https://www.sa36.cc
+            </div>
+            <div class="col-md-2">
+              <img src="assets/img/21.png" alt="">未满21岁人士禁止进入<br>
+            SA36.NET 版权所有 &COPY;2017
+            </div>
+          </div>
+        </div>
+      </div>
     </footer>
 
     <!-- Bootstrap core JavaScript
@@ -239,16 +239,26 @@
 
     <!-- Initialize Swiper -->
     <script>
-        var swiper = new Swiper('.swiper-container', {
-            pagination: '.swiper-pagination',
-            nextButton: '.swiper-button-next',
-            prevButton: '.swiper-button-prev',
-            paginationClickable: true,
-            spaceBetween: 30,
-            centeredSlides: true,
-            autoplay: 2500,
-            autoplayDisableOnInteraction: false
-        });
+        $(document).ready(function() {
+          var swiper = new Swiper('.banner-swiper', {
+              pagination: '.swiper-pagination',
+              nextButton: '.swiper-button-next',
+              prevButton: '.swiper-button-prev',
+              paginationClickable: true,
+              spaceBetween: 30,
+              centeredSlides: true,
+              // autoplay: 2500,
+              autoplay: false,
+              autoplayDisableOnInteraction: false
+          });
+
+          var swiper2 = new Swiper('.nav-swiper', {
+            direction: 'horizontal',
+            slidesPerView: 'auto',
+            loop: false,
+            slidesPerView: 'auto',
+          });
+        })
     </script>
 </body>
 
