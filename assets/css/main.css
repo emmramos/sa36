@@ -12,6 +12,9 @@ body {
 /*
   Relevant styles below
 */
+header{
+  background: rgba(0,0,0,0.8);
+}
 header .topper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -28,6 +31,7 @@ header .navbar{
   min-height: 40px!important;
   background: url('../img/nav-bg.png');
   margin-bottom: 0!important;
+  border-radius: 0;
 }
 
 header .navbar .navbar-nav {
@@ -62,6 +66,9 @@ margin-right: 10px;
 }
 header .head-top li{
   display:inline-block;
+}
+main {
+  position: relative;
 }
 .nav-swiper{
   position: relative;
@@ -129,7 +136,7 @@ main .add-banner{
 .login-form{
   text-align: center;
   position: absolute;
-  bottom: 65px;
+  bottom: 140px;
   left: 0;
   right: 0;
   z-index: 999;

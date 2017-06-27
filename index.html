@@ -36,9 +36,15 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
+<style>
+.add-banner a:hover{
+  -webkit-animation: shake 1s;
+      animation: shake 1s;
+}
 
+</style>
 <body>
-    <header>
+    <header class=" navbar-fixed-top">
         <div class="container">
             <!-- Topper w/ logo -->
             <div class="row topper">
@@ -56,6 +62,8 @@
                   <div class="language">
                     <select>
                       <option value="简体中文">简体中文</option>
+                      <option value="繁体中文">繁体中文</option>
+                      <option value="English">English</option>
                     </select>
                   </div>
                   <div class="cs">
@@ -70,7 +78,7 @@
         <nav class="navbar navbar-inverse">
             <div class="text-center">
 
-                <div id="navbar" class="navbar-collapse hidden-sm hidden-xs">
+                <div id="navbar" class="navbar-collapse hidden-sm hidden-xs ">
                     <ul class="nav navbar-nav">
                         <li><a href="#"><span><img src="assets/img/nav/live.png" alt=""></span>现场游戏</a></li>
                         <li><a href="#"><span><img src="assets/img/nav/slot.png" alt=""></span>电子游戏</a></li>
@@ -94,11 +102,10 @@
     <main>
         <div class="swiper-container banner-swiper">
             <div class="swiper-wrapper">
-              <div class="swiper-slide"><img src="assets/img/banner1.jpg" class="img-responsive" alt=""></div>
-              <div class="swiper-slide"><img src="assets/img/banner2.jpg" class="img-responsive" alt=""></div>
-              <div class="swiper-slide"><img src="assets/img/banner3.jpg" class="img-responsive" alt=""></div>
-              <div class="swiper-slide"><img src="assets/img/banner4.jpg" class="img-responsive" alt=""></div>
-              <div class="swiper-slide"><img src="assets/img/banner5.jpg" class="img-responsive" alt=""></div>
+                <div class="swiper-slide"><img src="assets/img/1.png" class="img-responsive" alt=""></div>
+                <div class="swiper-slide"><img src="assets/img/2.png" class="img-responsive" alt=""></div>
+                <div class="swiper-slide"><img src="assets/img/3.png" class="img-responsive" alt=""></div>
+                <div class="swiper-slide"><img src="assets/img/4.png" class="img-responsive" alt=""></div>
             </div>
             <!-- Add Pagination -->
             <div class="swiper-pagination"></div>
@@ -125,7 +132,7 @@
         </div>
         <div class="add-banner">
           <div class="row">
-              <div class="col-md-4"><img src="assets/img/pad-banner-1.png" class="img-responsive" alt="h"></div>
+              <div class="col-md-4"><a href="#"><img src="assets/img/pad-banner-1.png" class="img-responsive" alt="h"></a></div>
               <div class="col-md-4"><img src="assets/img/pad-banner-2.png" class="img-responsive" alt="a"></div>
               <div class="col-md-4"><img src="assets/img/pad-banner-3.png" class="img-responsive" alt="s"></div>
           </div>
