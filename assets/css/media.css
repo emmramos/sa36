@@ -118,6 +118,9 @@
 /* Medium Devices, Desktops */
 
 @media only screen and (min-width: 992px) {
+  footer .container{
+    width: 100%;
+  }
   .nav>li{
     display: block;
   }
@@ -153,7 +156,7 @@
     height: 23px;
   }
   main .add-banner{
-    padding: 14px 340px 25px;
+    padding: 14px 340px 14px;
   }
   .footer-copyright div{
     margin-bottom: 0;
