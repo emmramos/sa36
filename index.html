@@ -80,10 +80,10 @@
 
                 <div id="navbar" class="navbar-collapse hidden-sm hidden-xs ">
                     <ul class="nav navbar-nav">
-                        <li><a href="#"><span><img src="assets/img/nav/live.png" alt=""></span>现场游戏</a></li>
-                        <li><a href="#"><span><img src="assets/img/nav/slot.png" alt=""></span>电子游戏</a></li>
-                        <li><a href="#"><span><img src="assets/img/nav/multi.png" alt=""></span>多人游戏</a></li>
-                        <li><a href="#"><span><img src="assets/img/nav/mobile.png" alt=""></span>移动平台</a></li>
+                        <li><a href="#" class="swipe1"><span><img src="assets/img/nav/live.png" alt=""></span>现场游戏</a></li>
+                        <li><a href="#" class="swipe2"><span><img src="assets/img/nav/slot.png" alt=""></span>电子游戏</a></li>
+                        <li><a href="#" class="swipe3"><span><img src="assets/img/nav/multi.png" alt=""></span>多人游戏</a></li>
+                        <li><a href="#" class="swipe4"><span><img src="assets/img/nav/mobile.png" alt=""></span>移动平台</a></li>
                     </ul>
                 </div>
 
@@ -249,9 +249,22 @@
         $(document).ready(function() {
           var swiper = new Swiper('.banner-swiper', {
               pagination: '.swiper-pagination',
-              nextButton: '.swiper-button-next',
-              prevButton: '.swiper-button-prev',
               paginationClickable: true,
+              paginationBulletRender: function (swiper, index, className) {
+                if(index == 0){
+                  return '<div class="swiper-pagination-wrapper"><span class="swiper-pagination-label swiper-pagination-label'+index+'">现场游戏</span><span class="swiper-pagination-bullet"></span></div>';
+                }else if(index == 1){
+                  return '<div class="swiper-pagination-wrapper"><span class="swiper-pagination-label swiper-pagination-label'+index+' swiper-pagination-label-none">电子游戏</span><span class="swiper-pagination-bullet"></span></div>';
+                }else if(index == 2){
+                  return '<div class="swiper-pagination-wrapper"><span class="swiper-pagination-label swiper-pagination-label'+index+' swiper-pagination-label-none">多人游戏</span><span class="swiper-pagination-bullet"></span></div>';
+                }else if(index == 3){
+                  return '<div class="swiper-pagination-wrapper"><span class="swiper-pagination-label swiper-pagination-label'+index+' swiper-pagination-label-none">移动平台</span><span class="swiper-pagination-bullet"></span></div>';
+                }
+              },
+              onSlideChangeStart(swiper) {
+                $('.swiper-pagination-label').addClass('swiper-pagination-label-none');
+                $('.swiper-pagination-label'+swiper.activeIndex).removeClass('swiper-pagination-label-none');
+              },
               spaceBetween: 30,
               centeredSlides: true,
               // autoplay: 2500,
@@ -264,6 +277,27 @@
             slidesPerView: 'auto',
             loop: false,
             slidesPerView: 'auto',
+          });
+
+          $('.swipe1').click(function() {
+            swiper.slideTo(0,1000,false );
+            $('.swiper-pagination-label').addClass('swiper-pagination-label-none');
+            $('.swiper-pagination-label0').removeClass('swiper-pagination-label-none');
+          });
+          $('.swipe2').click(function() {
+            swiper.slideTo(1,1000,false );
+            $('.swiper-pagination-label').addClass('swiper-pagination-label-none');
+            $('.swiper-pagination-label1').removeClass('swiper-pagination-label-none');
+          });
+          $('.swipe3').click(function() {
+            swiper.slideTo(2,1000,false );
+            $('.swiper-pagination-label').addClass('swiper-pagination-label-none');
+            $('.swiper-pagination-label2').removeClass('swiper-pagination-label-none');
+          });
+          $('.swipe4').click(function() {
+            swiper.slideTo(3,1000,false );
+            $('.swiper-pagination-label').addClass('swiper-pagination-label-none');
+            $('.swiper-pagination-label3').removeClass('swiper-pagination-label-none');
           });
         })
     </script>
