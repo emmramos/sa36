@@ -252,13 +252,13 @@
               paginationClickable: true,
               paginationBulletRender: function (swiper, index, className) {
                 if(index == 0){
-                  return '<div class="swiper-pagination-wrapper"><span class="swiper-pagination-label swiper-pagination-label'+index+'">现场游戏</span><span class="swiper-pagination-bullet"></span></div>';
+                  return '<span class="swiper-pagination-bullet swiper-pagination-bullet-active"><span class="swiper-pagination-label swiper-pagination-label'+index+'"><i>现场游戏</i></span></span>';
                 }else if(index == 1){
-                  return '<div class="swiper-pagination-wrapper"><span class="swiper-pagination-label swiper-pagination-label'+index+' swiper-pagination-label-none">电子游戏</span><span class="swiper-pagination-bullet"></span></div>';
+                  return '<span class="swiper-pagination-bullet"><span class="swiper-pagination-label swiper-pagination-label'+index+' swiper-pagination-label-none"><i>电子游戏</i></span></span>';
                 }else if(index == 2){
-                  return '<div class="swiper-pagination-wrapper"><span class="swiper-pagination-label swiper-pagination-label'+index+' swiper-pagination-label-none">多人游戏</span><span class="swiper-pagination-bullet"></span></div>';
+                  return '<span class="swiper-pagination-bullet"><span class="swiper-pagination-label swiper-pagination-label'+index+' swiper-pagination-label-none"><i>多人游戏</i></span></span>';
                 }else if(index == 3){
-                  return '<div class="swiper-pagination-wrapper"><span class="swiper-pagination-label swiper-pagination-label'+index+' swiper-pagination-label-none">移动平台</span><span class="swiper-pagination-bullet"></span></div>';
+                  return '<span class="swiper-pagination-bullet"><span class="swiper-pagination-label swiper-pagination-label'+index+' swiper-pagination-label-none"><i>移动平台</i></span></span>';
                 }
               },
               onSlideChangeStart(swiper) {
@@ -299,6 +299,9 @@
             $('.swiper-pagination-label').addClass('swiper-pagination-label-none');
             $('.swiper-pagination-label3').removeClass('swiper-pagination-label-none');
           });
+          $('.swiper-pagination-label2').click(function() {
+            alert('haha')
+          })
         })
     </script>
 </body>
