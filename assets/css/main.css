@@ -128,8 +128,14 @@ main .add-banner{
   display: block
 }
 .swiper-pagination-bullet{
+  position: relative;
   background: #3f3f3f;
   opacity: 1
+}
+.swiper-pagination-bullet i{
+  font-style: normal;
+  margin-left: -5px;
+  white-space: nowrap;
 }
 .swiper-pagination-bullet-active{
   background: #c7863d
